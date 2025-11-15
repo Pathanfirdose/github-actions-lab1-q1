@@ -4,7 +4,8 @@ name: CI
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps: #added
+    steps:
+      - uses: actions/checkout@v4 #added
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
